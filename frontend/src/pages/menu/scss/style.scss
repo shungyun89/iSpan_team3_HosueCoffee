@@ -2,30 +2,34 @@ $colorMain: #E4D2A3;
 $colorMain2: #7D704D;
 $colorMain3: #A37025;
 
-.bodyMenu{
+.bodyMenu {
     display: flex;
     width: 100%;
 }
+
 .scrollBody {
     width: 100%;
 }
+
 .scroll {
     display: none;
-    span{
+
+    span {
         display: flex;
         justify-content: center;
     }
 }
-#demo-simple-select-autowidth-label{
-    &::before{
+
+#demo-simple-select-autowidth-label {
+    &::before {
         display: none;
     }
 }
 
 // aside
 
-.main1{
-    width: 23%;
+.main1 {
+    width: 13em;
     display: flex;
     justify-content: flex-end;
 }
@@ -50,40 +54,50 @@ $colorMain3: #A37025;
 
 
 
-.asideMenu{ 
-    
-    ul{
-        list-style:none;
+.asideMenu {
+
+    ul {
+        list-style: none;
         padding: 0;
-        a{
-            text-decoration:none;
+
+        a {
+            text-decoration: none;
         }
-        li{
+
+        li {
             padding: 1em 0;
-            &:hover{
+
+            &:hover {
                 border-left: 1px solid $colorMain;
                 color: #E4D2A3;
             }
         }
-    
+
     }
 }
 
 .drinkCard {
     margin: 2em;
     border: 0;
-    text-decoration:none;
-    a{
-        text-decoration:none;
+    text-decoration: none;
+
+    a {
+        text-decoration: none;
     }
-    img{
+
+    img {
         max-width: 15em;
         max-height: 15em;
-        transform:scale(1,1);transition: all 1s ease-out;
-        &:hover{transform:scale(1.2,1.2);}
+        transform: scale(1, 1);
+        transition: all 1s ease-out;
+
+        &:hover {
+            transform: scale(1.2, 1.2);
+        }
     }
 }
-.imgdiv{
+
+.imgdiv {
     overflow: hidden;
 }
 
@@ -106,7 +120,7 @@ $colorMain3: #A37025;
     .asideMenu {
         display: none;
     }
-    
+
     // .card{
     //     display: none;
     // }
@@ -116,196 +130,223 @@ $colorMain3: #A37025;
     }
 }
 
-.listconuter1{
+.listconuter1 {
     display: none;
 }
+
 // list RWD
 .listBodyRwd {
     display: none;
 }
+
 .cardRwd {
     width: 100%;
 }
+
 @media (max-width:1024px) {
     .listBody {
         input {
             width: 5rem;
         }
-  }
-  .listImg {
-      width: 6em;
-      height: 6em;
-      padding: 0;
-  }
-  .main2 {
-      margin: 0 ;
-  }
-  .nameRotate{
-    flex-direction: column;
-    // padding-left: 2em;
-    // width: 22em;
-  }
-  
-  .amount {
-    display: none;
-  }
-  .quantityText {
-    display: none;
-  }
-  
-  .menuNumButton {
-    border-radius: 0;
-    border: 0;
-  }
-  .quantity {
-    border: 0;
-  }
-  
-  .price {
-    display: block;
-    
-  }
-  
-  .coffeeName {
-    width: 8em;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .quantityText1 {
-    width: 5em;
-  }
-
-  .menuNumButton {
-    border: none  !important; 
-  }
-
-
-} 
-  
-  @media (max-width:376px) {
-    .nameRotate{
-      width: 8em;
     }
-  }
 
-@media (max-width:800px) {
-    .drinkCard{
+    .listImg {
+        width: 6em;
+        height: 6em;
+        padding: 0;
+    }
+
+    .main2 {
+        margin: 0;
+    }
+
+    .nameRotate {
+        flex-direction: column;
+        // padding-left: 2em;
+        // width: 22em;
+    }
+
+    .amount {
         display: none;
     }
-    .listBodyRwd{
-        display: flex;
-        width: 100%;
-        padding: 10px 0;
+
+    .quantityText {
+        display: none;
     }
-    .amount{
+
+    .menuNumButton {
+        border-radius: 0;
+        border: 0;
+    }
+
+    .quantity {
+        border: 0;
+    }
+
+    .price {
+        display: block;
+
+    }
+
+    .coffeeName {
         width: 8em;
         display: flex;
         justify-content: center;
     }
+
+    .quantityText1 {
+        width: 5em;
+    }
+
+    .menuNumButton {
+        border: none !important;
+    }
+
+
+}
+
+@media (max-width:376px) {
+    .nameRotate {
+        width: 8em;
+    }
+}
+
+@media (max-width:800px) {
+    .drinkCard {
+        display: none;
+    }
+
+    .listBodyRwd {
+        display: flex;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .amount {
+        width: 8em;
+        display: flex;
+        justify-content: center;
+    }
+
     .card {
         width: 100%;
     }
-    .main2{
+
+    .main2 {
         width: auto;
         padding: 0 30px;
     }
+
     .scrollBody {
         display: flex;
         overflow-x: scroll;
         overflow-y: hidden;
         flex-wrap: nowrap;
-        width:100%;
-        
+        width: 100%;
+
     }
 
-   .scroll{
-       width: 1000px;
-       display: flex;
-       height: 2em;
-       border: 1px solid $colorMain;
-       padding-top: 5px;
-    //    overflow-x: scroll;
-   }
-   .asd{
-       display: flex;
-       width: 200%;
-       scrollbar-width: none;
-   }
-   .pagination_rounded {
-       display: none;
-       ul {
+    .scroll {
+        width: 1000px;
+        display: flex;
+        height: 2em;
+        border: 1px solid $colorMain;
+        padding-top: 5px;
+        //    overflow-x: scroll;
+    }
+
+    .asd {
+        display: flex;
+        width: 200%;
+        scrollbar-width: none;
+    }
+
+    .pagination_rounded {
         display: none;
-       }
-   }
+
+        ul {
+            display: none;
+        }
+    }
 
 }
 
-.pagination_rounded, .pagination_square {
-	display:flex;
+.pagination_rounded,
+.pagination_square {
+    display: flex;
     justify-content: center;
-	
+
 }
+
 .pagination_rounded {
-	ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		li {
-			float: left;
-			margin-left: 20px;
-			a {
-				float: left;
-				color: $colorMain;
-				border-radius: 50%;
-				line-height: 30px;
-				height: 30px;
-				width: 30px;
-				text-align: center;
-				margin-bottom: 40px;
-				border: 1px solid #e0e0e0;
-				&:hover {
-					background: $colorMain;
-					color: #fff;
-					border: 1px solid  $colorMain;
-				}
-			}
-		}
-	}
-	li {
-		&:first-child {
-			margin-left: 0px;
-		}
-	}
-	.prev {
-		margin-left: 0px;
-		border-radius: 35px;
-		width: 90px;
-		height: 34px;
-		line-height: 34px;
-		i {
-			margin-right: 10px;
-		}
-	}
-	.next {
-		border-radius: 35px;
-		width: 90px;
-		height: 34px;
-		line-height: 34px;
-	}
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            float: left;
+            margin-left: 20px;
+
+            a {
+                float: left;
+                color: $colorMain;
+                border-radius: 50%;
+                line-height: 30px;
+                height: 30px;
+                width: 30px;
+                text-align: center;
+                margin-bottom: 40px;
+                border: 1px solid #e0e0e0;
+
+                &:hover {
+                    background: $colorMain;
+                    color: #fff;
+                    border: 1px solid $colorMain;
+                }
+            }
+        }
+    }
+
+    li {
+        &:first-child {
+            margin-left: 0px;
+        }
+    }
+
+    .prev {
+        margin-left: 0px;
+        border-radius: 35px;
+        width: 90px;
+        height: 34px;
+        line-height: 34px;
+
+        i {
+            margin-right: 10px;
+        }
+    }
+
+    .next {
+        border-radius: 35px;
+        width: 90px;
+        height: 34px;
+        line-height: 34px;
+    }
 }
+
 a {
-	&:link {
-		text-decoration: none;
-	}
+    &:link {
+        text-decoration: none;
+    }
 }
+
 .visible-xs {
-	display: none!important;
+    display: none !important;
 }
 
 //  POPO
 
-  .overlay {
+.overlay {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -316,14 +357,15 @@ a {
     visibility: hidden;
     opacity: 0;
     z-index: 0;
-  }
-  .overlay:target {
+}
+
+.overlay:target {
     visibility: visible;
     opacity: 1;
-  }
-  
-  .menuPopup {
-    margin: 15em auto; 
+}
+
+.menuPopup {
+    margin: 15em auto;
     padding-bottom: 15px;
     background: #fff;
     border-radius: 30px;
@@ -333,16 +375,16 @@ a {
     flex-direction: column;
     justify-content: space-between;
     z-index: 5;
-  }
+}
 
-  
-  .menuPopup h2 {
+
+.menuPopup h2 {
     margin-top: 0;
     color: #333;
     font-family: Tahoma, Arial, sans-serif;
-  }
+}
 
-  .menuPopup .close {
+.menuPopup .close {
     position: absolute;
     top: 20px;
     right: 30px;
@@ -351,18 +393,19 @@ a {
     font-weight: bold;
     text-decoration: none;
     color: #333;
-    cursor: pointer; 
-  }
-  .menuPopup .close:hover {
+    cursor: pointer;
+}
+
+.menuPopup .close:hover {
     color: $colorMain;
-  }
+}
 
 
 // .popoimgbody{
 //     width: 100%;
 // }
 
-  .popoimg {
+.popoimg {
     width: 10rem;
     height: 10rem;
     display: flex;
@@ -371,29 +414,33 @@ a {
     overflow: hidden;
     padding: 1em;
     margin-top: 1em;
+
     img {
         width: 100%;
         height: 100%;
     }
-  }
+}
 
-  .menuContent {
+.menuContent {
     padding: 20px;
-      display: flex;
-      align-items: flex-start;
-  }
-  .menuContent1 {
+    display: flex;
+    align-items: flex-start;
+}
+
+.menuContent1 {
     display: flex;
     justify-content: center;
     margin-left: 5em;
 
-  }
-  .menuContent2 {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-  }
-  .PaymentLast1 {
+}
+
+.menuContent2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.PaymentLast1 {
     border-radius: 10px;
     border: 1px solid $colorMain;
     width: 7rem;
@@ -406,19 +453,22 @@ a {
 
 .deletebtn {
     border: 1px solid $colorMain;
-    &:hover{
+
+    &:hover {
         background-color: $colorMain;
         color: #fff;
     }
 }
 
 .popupName {
-    white-space:nowrap;
-    h2{
-      display: flex;
-      padding-left:1em;
+    white-space: nowrap;
+
+    h2 {
+        display: flex;
+        padding-left: 1em;
     }
 }
+
 .popupNameTop {
     padding-top: 2em;
     display: flex;
@@ -427,11 +477,12 @@ a {
 
 }
 
-  .popotext {
-      padding: 20px;
-      width: 100%;
-  }
-  .menuNumButton {
+.popotext {
+    padding: 20px;
+    width: 100%;
+}
+
+.menuNumButton {
     border: #E4D2A3 1px solid;
     border-radius: 20px;
     height: 2em;
@@ -440,7 +491,9 @@ a {
 
 }
 
-.quantityText ,.buttonLeft ,.buttonRight {
+.quantityText,
+.buttonLeft,
+.buttonRight {
     display: flex;
     align-items: center;
 }
@@ -452,22 +505,26 @@ a {
     border-left: #E4D2A3 1px solid;
     border-right: #E4D2A3 1px solid;
 }
+
 .btn2 {
     display: none;
 }
-  
-  @media screen and (max-width: 700px){
-    .menuPopup{
+
+@media screen and (max-width: 700px) {
+    .menuPopup {
         width: auto;
         margin-left: 30px;
         margin-right: 30px;
     }
+
     .menuContent {
         padding: 0;
     }
+
     .deletebtn {
         border: 1px solid $colorMain;
-        &:hover{
+
+        &:hover {
             background-color: $colorMain;
             color: #fff;
         }
@@ -475,9 +532,9 @@ a {
 }
 
 
- 
 
-.shopping{
+
+.shopping {
     display: flex;
     position: fixed;
     bottom: 60px;
@@ -487,9 +544,8 @@ a {
     padding: 10px;
     // color: $colorMain3;
     background-color: $colorMain;
-    &:hover{
+
+    &:hover {
         color: #eee;
     }
 }
-
-

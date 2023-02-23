@@ -1,18 +1,11 @@
 import React,{ useState} from 'react';
 import Counter from '../component/Counter';
-
-
-
 const List = (props) => {
-    // 接收localStorage上的購物車資料
     const datas1 = JSON.parse(localStorage.getItem('gifts'))
     const [datasNEW, setdatasNEW] = useState(datas1)
     const [totalPrice1, settotalPrice1] = useState()
-    // 接收資料庫資料
     const {datas,totalprice,settotalprice} = props 
-    // 計算datas的長度
     const datasmath=datas.length
-    // 計算datas1的長度
     const datas1math=datas1.length
     let all= 0
     var menuCart=[];
@@ -27,9 +20,7 @@ const List = (props) => {
     }   
     return(
         <> 
-            {/* 印出資料 */}
             {menuCart.map((to,i)=>{
-                // 設定圖片路徑
                 const menuimg = (to.drink_name)
                 const total = datas1[i].drinkCounter
                 const price = to.price
@@ -90,6 +81,5 @@ const List = (props) => {
         </>   
     )    
 }
-
 
 export default List

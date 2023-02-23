@@ -10,6 +10,7 @@ const Pay = (props) => {
         }
         localStorage.setItem("updateprices", JSON.stringify(updateprice))
     }
+    
     return (
         <div className="list">
             <div className="Promo">
@@ -32,11 +33,13 @@ const Pay = (props) => {
                     </Link>
                 </div>
                 <div className="d-flex justify-content-end">
-                    <Link to="/OnlineCheckPage2" onClick={updateprice}>
-                        <div className="btn PaymentLast">
-                            結帳
-                        </div>
-                    </Link>
+                    {totalprice ? (
+                        <Link to="/OnlineCheckPage2" onClick={updateprice}>
+                            <div className="btn PaymentLast">結帳</div>
+                        </Link>
+                    ) : (
+                        <div className="btn PaymentLast">結帳</div>
+                    )}
                 </div>
             </div>
         </div>
